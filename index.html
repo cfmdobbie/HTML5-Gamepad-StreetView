@@ -91,14 +91,17 @@ function updateGamepadState() {
 	}
 }
 
+// Conversion: degrees to radians
 function d2r(degrees) {
 	return degrees * (Math.PI / 180);
 }
 
+// Conversion: radians to degrees
 function r2d(radians) {
 	return radians * (180 / Math.PI);
 }
 
+// Calculate new coordinates given current coordinates, a heading, and a distance
 function getNewCoordinates(coords, heading, distance) {
 	// Current coordinates
 	var lat = coords.lat;
@@ -120,8 +123,11 @@ function getNewCoordinates(coords, heading, distance) {
 	return {lat: lat, lng: lng};
 }
 
+// Register event listeners
 window.addEventListener("gamepadconnected", gamepadconnected);
 window.addEventListener("gamepaddisconnected", gamepaddisconnected);
+
+// Register main update loop
 window.requestAnimationFrame(mainloop);
 
 		</script>
