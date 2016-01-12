@@ -7,12 +7,24 @@ body {
 	margin: 0;
 }
 #map {
+	width: 400px;
+	height: 400px;
+	top: -100px;
+	left: -100px;
+}
+#mapRotation {
+	width: 200px;
+	height: 200px;
+	transform: rotate(135deg);
+}
+#gpsPanel {
 	width: 200px;
 	height: 200px;
 	border: 1px solid black;
 	position: fixed;
-	bottom: 210px;
+	bottom: 10px;
 	left: 10px;
+	overflow: hidden;
 }
 #streetView {
 	width: 100%;
