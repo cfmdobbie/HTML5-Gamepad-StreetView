@@ -36,16 +36,16 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 600px;
+  height: 100%;
 }
 
 /* The container for the map. */
 #mapPanel {
   /* Absolute position and dimensions. */
   position: absolute;
-  top: 500px;
-  left: 537px;
-  width: 174px;
+  top: 544px;
+  left: 554px;
+  width: 170px;
   height: 140px;
   /* Crop the contained rotated map. */
   overflow: hidden;
