@@ -153,6 +153,10 @@ function initMap() {
     keyboardShortcuts: false
   });
   
+  // Show valid Street View locations in a blue overlay on the map
+  var streetViewLayer = new google.maps.StreetViewCoverageLayer();
+  streetViewLayer.setMap(map);
+  
   // Street view panel
   streetView = new google.maps.StreetViewPanorama(document.getElementById("streetView"));
   streetView.setZoom(2);
