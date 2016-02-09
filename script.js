@@ -45,6 +45,9 @@ function mainloop() {
     // Simple rotation of steering wheel based on controller input
     document.getElementById("wheel").style.transform = "rotate(" + (xAxis*90) + "deg)";
     
+    // Simple map
+    document.getElementById("map").style.transform = "rotate(" + (-pov.heading) + "deg)";
+    
     // Update pitch wrt controller y-axis - ranges from -1 (up) to +1 (down)
     var yAxis = getAxisValue(gamepad, 1);
     pov.pitch -= yAxis; // Need to invert y-axis control

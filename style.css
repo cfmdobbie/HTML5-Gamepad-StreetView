@@ -62,13 +62,6 @@ body {
   border: 1px solid black;
 }
 
-/* Intermediate panel to rotate the map. */
-#mapRotation {
-  width: 174px;
-  height: 140px;
-  transform: rotate(135deg);
-}
-
 /* The actual Google Map panel. */
 #map {
   width: 230px;
