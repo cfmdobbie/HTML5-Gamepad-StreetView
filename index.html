@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>HTML5-Gamepad-StreetView</title>
-		<link rel="stylesheet" href="style.css"/>
-		<script src="script.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap" async defer></script>
-	</head>
-	<body>
-
-<div id="streetView"></div>
-
-<img id="interior" src="interior.svg"/>
-<div id="gpsPanel">
-	<div id="mapRotation">
-		<div id="map"></div>
-	</div>
-</div>
-
-<p id="gamepadMessage">Gamepad <span id="gamepadState">always initially unavailable - please connect or reconnect!</span></p>
-
-	</body>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML5-Gamepad-StreetView</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap" async defer></script>
+  </head>
+  <body>
+    
+    <div id="streetView"></div>
+    
+    <img id="interior" src="interior.svg"/>
+    
+    <div id="gpsPanel">
+      <div id="mapRotation">
+        <div id="map"></div>
+      </div>
+    </div>
+    
+    <p id="gamepadMessage">Gamepad <span id="gamepadState">always initially unavailable - please connect or reconnect!</span></p>
+    
+  </body>
 </html>
 
