@@ -19,6 +19,8 @@ body {
   height: 720px;
   /* Will be entirely obscured - purely for safety. */
   background-color: black;
+  /* Crop all children to this element. */
+  overflow: hidden;
 }
 
 /* The car interior. */
@@ -27,7 +29,14 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  height: 720px;
+}
+
+/* The steering wheel. */
+#wheel {
+  position: absolute;
+  top: 520px;
+  left: 830px;
+  transform: rotate(0deg);
 }
 
 /* The Google Street View panel. */
