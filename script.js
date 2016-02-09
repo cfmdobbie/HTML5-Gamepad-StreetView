@@ -170,12 +170,20 @@ function processSVData(data, status) {
     streetView.setPov(pov);
     streetView.setVisible(true);
     
+    var dot = {
+      url: 'dot.png',
+      size: new google.maps.Size(20, 20),
+      origin: new google.maps.Point(0, 0),
+      anchor: new google.maps.Point(10, 10)
+    };
+    
     // Create or update map marker
     if(marker == null) {
       marker = new google.maps.Marker({
         position: data.location.latLng,
         map: map,
-        clickable: false
+        clickable: false,
+        icon: dot
       });
     } else {
       marker.setPosition(data.location.latLng);
