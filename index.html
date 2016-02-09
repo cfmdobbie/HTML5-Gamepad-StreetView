@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -9,17 +9,38 @@
   </head>
   <body>
     
-    <div id="streetView"></div>
-    
-    <img id="interior" src="interior.svg" alt="Car interior"/>
-    
-    <div id="gpsPanel">
-      <div id="mapRotation">
-        <div id="map"></div>
+    <main>
+      
+      <h1>HTML5-Gamepad-StreetView</h1>
+      
+      <div id="display">
+        
+        <div id="streetView"></div>
+        
+        <img id="interior" src="interior.svg" alt="Car interior"/>
+        
+        <div id="mapPanel">
+          <div id="mapRotation">
+            <div id="map"></div>
+          </div>
+        </div>
+        
+        <p id="gamepadMessage">Gamepad <span id="gamepadState">always initially unavailable - please connect or reconnect!</span></p>
+        
       </div>
-    </div>
+      
+      <p>A simple HTML5 library mashup, utilizing the W3C's <a href="https://www.w3.org/TR/gamepad/">Gamepad API</a>, and Google's <a href="https://developers.google.com/maps/">Maps</a> and <a href="https://developers.google.com/maps/documentation/streetview/">Street View</a> APIs.</p>
+      <p>All street imagery is Copyright &copy; Google.</p>
+      
+    </main>
     
-    <p id="gamepadMessage">Gamepad <span id="gamepadState">always initially unavailable - please connect or reconnect!</span></p>
+    <footer>
+      <p>Copyright &copy; 2016 Charlie Dobbie</p>
+      <p>Utilizes the following:
+        <a href="https://developers.google.com/maps/">Google Maps API</a>
+        &middot; <a href="https://developers.google.com/maps/documentation/streetview/">Google Street View Image API</a>
+        &middot; <a href="https://www.w3.org/TR/gamepad/">Gamepad API</a></p>
+    </footer>
     
   </body>
 </html>
