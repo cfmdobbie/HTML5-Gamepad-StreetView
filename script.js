@@ -90,16 +90,6 @@ function updateGamepadState() {
   }
 }
 
-// Conversion: degrees to radians
-function d2r(degrees) {
-  return degrees * (Math.PI / 180);
-}
-
-// Conversion: radians to degrees
-function r2d(radians) {
-  return radians * (180 / Math.PI);
-}
-
 // Calculate new coordinates given current coordinates, a heading, and a distance
 function getNewCoordinates(coords, heading, distance) {
   // Current coordinates
